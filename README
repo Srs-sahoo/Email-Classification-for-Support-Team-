@@ -1,0 +1,12 @@
+# Email Classification API 🚀
+
+This API masks PII from incoming emails and classifies them into support categories using a trained ML model.
+
+## Setup
+
+1. Clone the repo.
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
