@@ -5,11 +5,11 @@ predefined categories while ensuring that personal information (PII) is masked b
 processing. After classification, the masked data should be restored to its original form. 
 This project implements a full email classification pipeline with PII masking, traditional machine learning classification, and a FastAPI-based server. It includes:
 
-- **Data Preprocessing** (`utils.py`)
-- **Model Training** (`models.py`)
-- **Inference Pipeline** (`pipeline.py`)
-- **API Server** (`api.py`)
-- **Containerization** (`Dockerfile`)
+- **Data Preprocessing** 
+- **Model Training** 
+- **API Server** 
+- **Containerization**
+- **requirement.txt**
 
 
 1. **Install dependencies**:
