@@ -11,27 +11,12 @@ This project implements a full email classification pipeline with PII masking, t
 - **API Server** (`api.py`)
 - **Containerization** (`Dockerfile`)
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/email_classifier_project.git
-   cd email_classifier_project
-   ```
 
-2. **Create & activate a virtual environment** (recommended):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # on Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**:
+1. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    python -m spacy download en_core_web_sm
    ```
-
----
-
-## 🛠 File Descriptions
 
 ### `utils.py`
 Contains `mask_pii(text)` which:
@@ -92,7 +77,7 @@ Containerizes the application:
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### 1. Train the Model
 
@@ -111,10 +96,6 @@ This generates `models/email_classifier.pkl`.
 ```bash
 uvicorn api:app --reload --host 0.0.0.0 --port 8000
 ```
-
-- **Swagger UI**: http://localhost:8000/docs
-- **Redoc**: http://localhost:8000/redoc
-
 
 ### 3. Test the Endpoint
 
